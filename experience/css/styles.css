@@ -1,0 +1,940 @@
+@font-face {
+    font-family: 'barlowregular';
+    src: url('../fonts/barlow-regular-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.btn-link-back{
+  color: white;
+  background-color: #000;
+  margin: 10px;
+  position:fixed;
+  border-radius: 20px;
+  z-index: 200;
+}
+
+html{
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+h1{
+  font-size:48px;
+  font-family: 'poppinsregular';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+h2{
+  font-size:48px;
+  font-family: 'poppinsregular';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p{
+  font-family: 'poppinsregular';
+  font-size: 18px;
+}
+
+.margin-top{
+  margin-top: 130px;
+}
+
+.max-width-120{
+  max-width: 1200px;
+}
+.width-content{
+  width: fit-content;
+}
+.text-left{
+  text-align: left;
+}
+
+input:focus {
+  outline: none;
+}
+
+.border-radius-40{
+  border-radius: 40px;
+}
+.w-40{
+  width:45%;
+}
+.f-10{
+  display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: white;
+    font-size: 12px;
+    background: black;
+    border: 0;
+    border-radius: 40px;
+}
+
+.f-11{
+    margin: 0 15px;
+     display: flex;
+      align-items: center;
+      padding: 10px 25px;
+      color: black;
+      font-size: 12px;
+      border: 1px solid black;
+      background: white;
+     
+      border-radius: 40px;
+  
+}
+#sign-up-form form{
+  width: 75%;
+  margin: 60px auto 0 auto;
+  position: relative;
+}
+.or-border{
+  width: fit-content;
+  margin:0 auto;
+}
+.or-border::before{
+  content: "";
+  height: 2px;
+  width: 45%;
+  color: #000;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom:13px;
+}
+.or-border::after{
+  content: "";
+  height: 2px;
+  width: 45%;
+  color: #000;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  bottom:13px;
+}
+
+.form-label{
+  color: #0F1922 !important ;
+  font-family: "poppinsregular";
+  margin-left:14px;
+}
+
+.form-control{
+  border-radius: 40px;
+  padding-top: 9.5px;
+  padding-bottom: 9px;
+  border: 1px solid #0F1922;
+}
+
+.form-check-input{
+  width: 1.3em;
+  height: 1.3em;
+
+}
+.form-check-label{
+  font-family: "poppinsregular";
+  margin-left: 10px;
+}
+
+#submit-btn-sign .form-control{
+  background-color: #0F1922;
+  color: white;
+  font: 20px;
+  font-weight: 600;
+}
+
+
+/* NAVBAR */
+  li{
+    border:none;
+    position: relative;
+  }
+  li:hover{
+    border: none;
+  }
+
+
+.nav-link{
+    font-family: 'barlowregular';
+   font-weight: 600;
+    font-size: 18px;
+    color: black !important;
+    
+   
+}
+
+.nav-item::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom:-5px;
+    background-color: rgb(24, 23, 23);
+    transition: all ease-in-out .2s;
+  }
+  .nav-item:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 28.5px;
+    padding-left: 28.5px;
+    }
+.navbar{
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+}
+/* NAVBAR END */
+
+
+/* Main cont */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  padding:12px 15px;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 50%;
+
+ }
+ 
+ .back-to-top:hover{
+  opacity: 0.7;
+ }
+
+.btn:hover{
+  background-color: white;
+  color: black;
+  transition: ease 0.5s;
+}
+.img-cover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/AdobeStock_254178807.jpeg");
+
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 95%;
+  height: 720px;
+  object-fit: cover;
+  margin: 0 0 0 auto;
+  border-radius: 40px 0 0 40px;
+}
+
+.img-cover-search{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url("../images/pexels-dziana-hasanbekava-5589439.jpg");
+  width: 95%;
+  height: 720px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  border-radius: 0px 40px 40px 0px;
+  background-blend-mode: darken;
+}
+
+.img-cover-about{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/pexels-andré-ulysses-de-salis-8246465.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 95%;
+  height: 720px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+.faint-text{
+  color: white;
+  opacity: 0.8;
+}
+
+
+.text-container{
+  width: 45%;
+  margin: auto auto auto 7%;
+}
+
+.text-container-2{
+  width: 912px;
+  margin: auto auto auto 20.5%;
+}
+
+
+/* SLICK  slider*/
+.card_slick .slick-list {
+  margin: 0 -5px;
+}
+.card_slick  .slick-slide>div {
+  padding: 10px 49px;
+}
+.card_slick .slick-slide img{
+  display: initial !important;
+}
+
+/* SLICK  slider END*/
+.btn-search{
+  display: flex;
+  align-items: center;
+  padding:12px 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background:black ;
+  width: 220px;
+  border: 0;
+  border-radius: 40px;
+}
+#explore_hobby .col-sm-4{
+  width: 30%;
+
+}
+.about-wrapper{
+  display: flex;
+  padding:20px 100px;
+}
+.about-text{
+  font-weight: bold;
+  color: white;
+}
+.padding-x{
+  padding: 30px 120px;
+}
+.img-cover-about h2{
+  padding:60px 0;
+}
+.heading2{
+  font-size:48px;
+  font-family: 'poppinsregular';
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.btn-chevron{
+  padding: 10px 13px;
+  border: 1px solid black;
+  background-color: white;
+  color:black;
+  border-radius: 50%;
+  margin:2px 12px;
+}
+.btn-chevron:hover{
+  background-color: black;
+  color: white;
+  transition: ease 0.5s;
+}
+.card-wrapper{
+  background: #FCFCFC;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 40px;
+  padding: 10px;
+  transition: padding 0.3s, box-shadow 0.5s ease-in-out;
+  
+}
+.card-wrapper:hover{
+  
+  box-shadow: none;
+  transition: ease-in-out 0.3s;
+}
+.card{
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  
+}
+.bold-text{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+ 
+}
+.bold-text-white{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  margin: 200px 0 80px 0;
+}
+
+.img-cover-2{
+  width: 95%;
+  height: 720px;
+  background: url(../images/bungy-stockhorn_002_web-min1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 15%; 
+  border-radius: 0px 40px 40px 0px;
+}
+
+.img-cover-sign{
+  width: 98%;
+  margin: 0 auto;
+  height: 1300px;
+  background: url(../images/AdobeStock_458616984.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 15%; 
+  border-radius: 0px 40px 40px 0px;
+  border-radius: 40px;
+}
+
+#search_cont form{
+  display:flex;
+  flex-direction:row;
+  margin: auto;
+  width: 50%;
+  padding: 5px 5px 5px 30px;
+  border: 2px solid black;
+  border-radius: 22px;
+  margin-top: 64px;
+  background: rgba(255, 255, 255, 0.89);
+  margin: auto;
+}
+.search_input{
+  width: fit-content;
+  border:0; 
+  background-color: transparent;
+  color: black;  
+  
+}
+
+.search_submit{
+  width: 149px;
+  border:0;
+  color: white;
+  padding: 18px 0;
+  background: rgba(0, 0, 0, 0.83);
+  border-radius: 22px;
+}
+
+.email_input{
+  flex-grow:2;
+  border:0; 
+}
+
+#subscribe_cont form{
+  display:flex;
+  flex-direction:row;
+  margin: auto;
+  width: 80%;
+  padding: 5px 7px 5px 30px;
+  border: 2px solid black;
+  border-radius: 40px;
+  margin-top: 64px;
+}
+.email_submit{
+  border:0;
+  background-color: black;
+  color: white;
+  height: 57px;
+  font-size: 18px;
+  font-family: 'poppinsregular';
+  font-weight: 100;
+  border-radius: 40px;
+  width: 207px;
+}
+
+.email_submit:hover{
+  background-color: white;
+  color: black;
+  transition: ease 0.5s;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.sponsors_slick img {
+  height: calc(50vh - 100px);
+  width: auto;
+  margin: 0 auto; /* it centers any block level element */
+}
+.btn-about{
+  background-color: black;
+  padding: 10px 40px;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-login{
+  text-decoration: none;
+  padding:10px 24px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: white;
+}
+.btn-sign{
+  text-decoration: none;
+  padding:10px 22px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+.btn-login:hover{
+  background-color: white;
+  color: black;
+  transition: ease 0.3s;
+}
+.btn-sign:hover{
+  background-color: black;
+  color: white;
+  transition: ease 0.3s;
+}
+
+
+/* SEarch page */
+
+.tag_popular{
+  font-size: 16px;
+  padding: 3px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.tag_popular:hover{
+  color: white;
+  background-color: black;
+  transition: ease 0.3s;
+}
+
+.result_wrapper{
+  padding: 0;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+}
+
+.results_info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  
+  padding: 20px;
+  background: rgba(195, 195, 195, 0.08);
+  border-radius: 40px;
+  height: fit-content;
+}
+
+.btn-book{
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 16px 8px auto auto ; 
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer_link{
+  text-decoration: none;
+  color: black;
+  font-family: "poppinsregular";
+  font-size: 16px;
+}
+
+.copyright{
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  border:3px solid black;
+  border-radius: 40px;
+  padding: 13px 68px;
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 1600px){
+.text-container-2{
+  margin: auto auto auto 12% ;
+}
+
+}
+
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    #explore_hobby .col-sm-4{
+      width: 100%;
+    }
+    #subscribe_cont form{
+      width: 100%;
+    }
+    .slick-slide>div {
+      padding: 6px 54px;
+    }
+    .navbar-nav{
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .d-none-btn{
+      display: none;
+    }
+    .navbar-toggler:focus{
+      box-shadow: none;
+    }
+    .navbar-toggler{
+      display: flex;
+      font-size: initial;
+      line-height: initial;
+    }
+    .tag_popular{
+      margin: 5px 3px;
+    }
+    .img-cover{
+     
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      margin: 0 0 0 auto;
+      border-radius: 0;
+    }
+    .img-cover-2{
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      background-position: 100% 50%;
+      margin: 0 0 0 auto;
+      border-radius: 0;
+    }
+
+    .img-cover-sign{
+      width: 100%;
+      margin: 0 auto;
+      height: 900px;
+      background: url(../images/AdobeStock_458616984.jpeg);
+      background-repeat: no-repeat;
+      background-position: 75% 5%; 
+      border-radius: 0;
+    }
+    .img-cover-search{
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      background-position: 100% 50%;
+      margin: 0 0 0 auto;
+      border-radius: 0;
+    }
+    .img-cover-about{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      background-position: 100% 50%;
+      margin: 0 0 0 auto;
+      border-radius: 0;
+      padding: 0;
+    }
+    
+    .padding-x{
+      padding: 20px;
+    }
+    .bold-text-white {
+      
+      margin: 20px 0 20px 0;
+  }
+    .text-container{
+      width: 80%;
+      margin: auto auto auto 6%;
+    }
+    .text-container-2{
+      margin: auto auto auto 6%;
+    }
+    .margin-top{
+      margin-top: 70px;
+    }
+    .img-cover-about h2{
+      padding:20px 0;
+    }
+
+    h1{
+      font-size: 24px;
+    }
+    h2{
+      font-size: 24px;
+    }
+    .heading2{
+      font-size: 24px;
+    }
+    p{
+      font-size: 16px;
+    }
+    form, #search_cont form{
+      width: 100%;
+    }
+    .email_submit{
+      width:140px;
+      font-size: 16px;
+    }
+    .copyright{
+      width: fit-content;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 16px;
+      border:3px solid black;
+      border-radius: 40px;
+      padding: 13px 34px;
+    }
+    .results_info{
+      margin-left: 0;
+      width: 100%;
+      margin:16px 0;
+    }
+    .btn-book{
+      width: 100%;
+    }
+    .result_wrapper{
+      width: 96%;
+      margin:auto;
+    }
+    #sign-up-form form{
+      width: 100%;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  h1, h2{
+    font-size: 32px
+  }
+  #subscribe_cont form{
+    width: 95%;
+  }
+  .img-cover{
+     
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+  }
+  .img-cover-sign{
+    width: 100%;
+    margin: 0 auto;
+    height: 900px;
+    background: url(../images/AdobeStock_458616984.jpeg);
+    background-repeat: no-repeat;
+    background-position: 75% 5%; 
+    border-radius: 0;
+  }
+  #sign-up-form form{
+    width: 100%;
+  }
+  .img-cover-about h2{
+    padding:20px 0;
+  }
+  .img-cover-2{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    background-position: 100% 50%;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+  }
+  .img-cover-search{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    background-position: 100% 50%;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+  }
+  .img-cover-about{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-position: 100% 50%;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+    padding: 0;
+  }
+  .padding-x{
+    padding: 20px;
+  }
+  #explore_hobby .col-sm-4{
+    width: 100%;
+  }
+  .slick-slide>div {
+    padding: 6px 54px;
+  }
+  .navbar-nav{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .d-none-btn{
+    display: none;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler{
+    display: flex;
+    font-size: initial;
+    line-height: initial;
+  }
+  .tag_popular{
+    margin: 5px 3px;
+  }
+  .bold-text-white{
+    margin: 50px 0 40px 0;
+  }
+  .heading2{
+    font-size: 32px;
+  }
+  p{
+    font-size: 16px;
+  }
+
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  .text-container-2{
+    margin:auto auto auto 8%;
+  }
+  #subscribe_cont form{
+    width: 90%;
+  }
+  p{
+    font-size: 16px;
+  }
+  h1, h2{
+    font-size: 32px
+  }
+  .heading2{
+    font-size: 32px;
+  }
+
+  .bold-text-white{
+    margin: 50px 0 40px 0;
+  }
+  .text-container{
+    width: 60%;
+  }
+  .text-container-2{
+    width: 70%;
+  }
+  .img-cover{
+     
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+  }
+  .img-cover-sign{
+    width: 100%;
+    margin: 0 auto;
+    height: 900px;
+    background: url(../images/AdobeStock_458616984.jpeg);
+    background-repeat: no-repeat;
+    background-position: 75% 5%; 
+    border-radius: 0;
+  }
+  #sign-up-form form{
+    width: 100%;
+  }
+  .img-cover-about h2{
+    padding:20px 0;
+  }
+  .img-cover-2{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    background-position: 20% 50%;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+  }
+  .img-cover-search{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    background-position: 100% 50%;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+  }
+  .img-cover-about{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-position: 100% 50%;
+    margin: 0 0 0 auto;
+    border-radius: 0;
+    padding: 0;
+  }
+  .padding-x{
+    padding: 20px;
+  }
+  #explore_hobby .col-sm-4{
+    width: 100%;
+  }
+  .slick-slide>div {
+    padding: 6px 54px;
+  }
+  .navbar-nav{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .d-none-btn{
+    display: none;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler{
+    display: flex;
+    font-size: initial;
+    line-height: initial;
+  }
+  .tag_popular{
+    margin: 5px 3px;
+  }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) and (max-width:1599px) {
+    #sign-up-form form{
+      width: 100%;
+    }
+}
+
